@@ -25,47 +25,47 @@ def topLogin(data: list) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO Daily Bonus - " + main.fate_region,
-                "description": f"Scheluded Login Fate/Grand Order.\n\n{messageBonus}",
+                "title": "FGO每日登录 - " + main.fate_region,
+                "description": f"按计划进行FGO每日登录 \n\n{messageBonus}",
                 "color": 563455,
                 "fields": [
                     {
-                        "name": "Level",
+                        "name": "等级",
                         "value": f"{rewards.level}",
                         "inline": True
                     },
                     {
-                        "name": "Tickets",
+                        "name": "呼符",
                         "value": f"{rewards.ticket}",
                         "inline": True
                     },
                     {
-                        "name": "Saint Quartz",
+                        "name": "圣晶石",
                         "value": f"{rewards.stone}",
                         "inline": True
                     },
                     {
-                        "name": "Login Days",
+                        "name": "登录天数",
                         "value": f"{login.login_days}",
                         "inline": True
                     },
                     {
-                        "name": "Total Days",
+                        "name": "总登录天数",
                         "value": f"{login.total_days}",
                         "inline": True
                     },
                     {
-                        "name": "Total Friend Points",
+                        "name": "友情点",
                         "value": f"{login.total_fp}",
                         "inline": True
                     },
                     {
-                        "name": "Friend Points",
+                        "name": "好友分值",
                         "value": f"+{login.add_fp}",
                         "inline": True
                     },
                     {
-                        "name": "Ap Max",
+                        "name": "体力上限",
                         "value": f"{login.act_max}",
                         "inline": True
                     }
