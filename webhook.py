@@ -26,7 +26,7 @@ def topLogin(data: list) -> None:
         "embeds": [
             {
                 "title": "FGO每日登录 - " + main.fate_region,
-                "description": f"按计划进行FGO每日登录 \n\n{messageBonus}",
+                "description": f"按计划进行的FGO每日登录 \n\n{messageBonus}",
                 "color": 563455,
                 "fields": [
                     {
@@ -99,7 +99,7 @@ def drawFP(servants, missions) -> None:
 
         for servant in servants:
             svt = svt_dict[servant.objectId]
-            message_servant += f"`{svt['name']}` "
+            message_servant += f"`{svt['originalName']}` "
 
     if(len(missions) > 0):
         for mission in missions:
@@ -109,12 +109,12 @@ def drawFP(servants, missions) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO Daily Bonus - " + main.fate_region,
-                "description": f"Scheluded Friend Point Fate/Grand Order.\n\n{message_mission}",
+                "title": "FGO每日登录 - " + main.fate_region,
+                "description": f"按计划进行的FGO每日登录.\n\n{message_mission}",
                 "color": 5750876,
                 "fields": [
                     {
-                        "name": "Gacha Result",
+                        "name": "友情池抽取结果",
                         "value": f"{message_servant}",
                         "inline": False
                     }
